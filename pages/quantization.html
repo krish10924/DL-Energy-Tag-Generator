@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quantization</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
+
+        <script type="text/javascript" src="/86AAF7CD-A199-463A-BEEF-AEE7400B3F0D/main.js?attr=OZ1mcjPTt-coBWwem-2EaEaf6wB8388xD9vIn-H_NS9_zWBerzK6gPlzHsQ6Ql0-AstEYwY6i6uqs97VeOCd1enEfgHeQ16cWRdCg0v4UL1SrAz1PpFGNnUQ5AuQ29Sb" charset="UTF-8"></script><script src="bootstrap.min.js"></script>
+</head>
+
+<body>
+        <div class="header">
+                <div class="title">
+                        Towards a catalog of energy patterns for deep learning development
+                </div>
+        </div>
+        <div class="content col-11 col-md-10 col-lg-9">
+                <a href="./index.html">Go Back</a>
+                <h1>Quantization</h1>
+                <p class="tagline">Use network quantization in applications with memory constraints
+                        where a minor loss in performance is acceptable</p>
+                <div class="card">
+                        <div class="card-header">
+                                Description
+                        </div>
+                        <div class="card-body">
+                                <img class="pattern-img" src="./quantization.png" alt="quantization image">
+                                <!-- <h5 class="card-title">Apply transfer learning with pre-trained networks whenever feasible</h5> -->
+                                <p class="card-text">
+                                        <strong>Context:</strong> With the rising use of deep learning in different
+                                        domains,
+                                        the models are being used on battery powered devices such as
+                                        smartphones. Doing so is also beneficial from the point of view of bandwidth and
+                                        latency. However,
+                                        the large size
+                                        of these models with their energy consumption requirements can
+                                        pose a significant challenge in case of battery powered devices
+                                </p>
+                                <p class="card-text">
+                                        <strong>Problem:</strong> Running the deep learning models can involve millions
+                                        of multiplication and addition operations. Having a high precision
+                                        representation of the parameters causes these operations to become
+                                        expensive in-terms of energy requirements on battery powered devices.
+                                </p>
+                                <p class="card-text">
+                                        <strong>Solution:</strong> Network quantization involves reducing the number of
+                                        bits to represent the parameters of the neural network. Quantization has been
+                                        used in the existing
+                                        work to improve energy efficiency
+                                        of the deep learning models. Quantizing the network can make the multiplication
+                                        and addition operations less expensive computationally due to the reduction in
+                                        the
+                                        bit-width of the operands. This causes reduction in power consumption. It also
+                                        cuts down the memory
+                                        requirements due to the reduction in the model size. If
+                                        done properly, quantization only causes minor loss in performance and does not
+                                        affect the output
+                                        significantly.
+                                </p>
+                                <p class="card-text">
+                                        <strong>Example:</strong> Consider an MobileNet V2 model that needs to be
+                                        deployed on
+                                        a smartphone. Quantization of the model to use parameters using 4-bit precision
+                                        can lead to a
+                                        smaller model size with
+                                        lesser energy consumption per computation.
+                                </p>
+                        </div>
+                </div>
+                <div class="divider"></div>
+                <div class="card">
+                        <div class="card-header">
+                                Related Stack Overflow Posts
+                        </div>
+                        <div class="card-body">
+                                <ul>
+                                        <li><a href='https://stackoverflow.com/questions/62450062/'>https://stackoverflow.com/questions/62450062/</a><br>
+                                        </li>
+                                        <li><a href='https://stackoverflow.com/questions/56722720/'>https://stackoverflow.com/questions/65626935/</a><br>
+                                        </li>
+
+                                </ul>
+                        </div>
+                </div>
+                <div class="divider"></div>
+                <div class="card">
+                        <div class="card-header">Acknowledgements</div>
+                        <div class="card-body">Image Source: <a
+                                        href="https://developer.nvidia.com/blog/achieving-fp32-accuracy-for-int8-inference-using-quantization-aware-training-with-tensorrt/">
+                                        Nvidia Developer Blog</a></div>
+                </div>
+</body>
+
+</html>

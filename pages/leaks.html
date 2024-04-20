@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory leaks</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <script type="text/javascript" src="/86AAF7CD-A199-463A-BEEF-AEE7400B3F0D/main.js?attr=4SSZ3RH0XxJzcb2muIx_Z_WSIre0I_vOs-ZsKSEcY0eW9d9Msme4GXXzWMQO9SGQncvnhw10KDPHvWY1RdKzyqHzkTOBvH3307rsIOXKFpE" charset="UTF-8"></script><script src="bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="title">
+            Towards a catalog of energy patterns for deep learning development
+        </div>
+    </div>
+    <div class="content col-11 col-md-10 col-lg-9">
+        <a href="./index.html">Go Back</a>
+        <h1>Memory leaks</h1>
+        <p class="tagline">Take care of memory leaks and OOM errors before starting the training process</p>
+        <div class="card">
+            <div class="card-header">
+                Description
+            </div>
+            <div class="card-body">
+                <img class="pattern-img" 
+                    src="./leaks.png" alt="memory leak image">
+                <!-- <h5 class="card-title">Apply transfer learning with pre-trained networks whenever feasible</h5> -->
+                <p class="card-text">
+                    <strong>Context:</strong> Memory management related exceptions constitute a
+                    major portion of fault triggers in deep learning. Memory leaks
+                    and OOM (out of memory) errors may during the training, loading
+                    of data, writing/saving of data and also during the inferencing
+                </p>
+                <p class="card-text">
+                    <strong>Problem:</strong> When a program terminates due to OOM errors during
+                    the process of training the network, in absence of a checkpoint, the
+                    knowledge gained during the training process is lost. Due to this,
+                    the computational energy spent on the training is wasted.
+                </p>
+                <p class="card-text">
+                    <strong>Solution:</strong>
+                    Factor in the memory availability constraints and possible
+                    OOM exceptions while designing the program to train the
+                    network and take appropriate steps to avoid them. This may reduce
+                    the chances of OOM errors and prevent the corresponding waste
+                    of energy.
+                </p>
+                <p class="card-text">
+                    <strong>Example:</strong> An example of this pattern can be seen in
+                    <a href="https://stackoverflow.com/questions/42886049/">this</a> stack overflow post .The user runs
+                    into out of memory
+                    error while training a Keras sequential model due to the inefficient
+                    management of the memory in a program that uses a for loop caus-
+                    ing a waste of energy spent on the training. This could be avoided
+                    by defining the network outside the for loop and reusing the same
+                    instance every iteration as suggested in the <a
+                        href="https://stackoverflow.com/a/42933345">answer</a>.
+                </p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="card">
+            <div class="card-header">
+                Related Stack Overflow Posts
+            </div>
+            <div class="card-body">
+                <ul>
+
+                    <li><a
+                            href='https://stackoverflow.com/questions/43695085/'>https://stackoverflow.com/questions/43695085/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/41255031/'>https://stackoverflow.com/questions/41255031/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/49942110/'>https://stackoverflow.com/questions/49942110/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/47482135/'>https://stackoverflow.com/questions/47482135/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/50690891/'>https://stackoverflow.com/questions/50690891/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/47743936/'>https://stackoverflow.com/questions/47743936/</a><br>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="card">
+            <div class="card-header">Acknowledgements</div>
+            <div class="card-body">Image Source: <a
+                    href="https://itnewstoday.net/en/matlab-handle-memory-leak/">
+                    itnewstoday</a></div>
+    </div>
+</body>
+
+</html>

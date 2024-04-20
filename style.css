@@ -1,0 +1,13 @@
+.energytag {
+    background: #06f106;
+    /* height: 24px; */
+    color: white;
+    padding: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    max-width: 120px;
+    text-align: center;
+    text-transform: capitalize;
+}

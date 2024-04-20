@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpointing</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <script type="text/javascript" src="/86AAF7CD-A199-463A-BEEF-AEE7400B3F0D/main.js?attr=_jqVQ2k-lrFLaX6h6-IJ-ryjxDBLlBAsFtuS1ZmbbXEbiIspEFfWqI8u6uZJbui8zgJNt5ceCAPekta0XPdVW44sAhpVMzVcRdDz4t29Yi4" charset="UTF-8"></script><script src="bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="title">
+            Towards a catalog of energy patterns for deep learning development
+        </div>
+    </div>
+    <div class="content col-11 col-md-10 col-lg-9">
+        <a href="./index.html">Go Back</a>
+        <h1>Checkpoint</h1>
+        <p class="tagline">Use checkpointing at regular intervals for networks with long training times.</p>
+        <div class="card">
+            <div class="card-header">
+                Description 
+            </div>
+            <div class="card-body">
+                <img class="pattern-img" 
+                    src="./checkpointing.png" alt="checkpointing image">
+                <!-- <h5 class="card-title">Apply transfer learning with pre-trained networks whenever feasible</h5> -->
+                <p class="card-text">
+                    <strong>Context:</strong> The training duration of some deep learning models can
+                    be very long, ranging from several hours to several months even with the use of 
+                    powerful hardware. This would require the training hardware running for a 
+                    long duration without any breakdown. Failure in hardware, interruption in the power 
+                    supply, or errors in the software may cause termination of the training process before it completes.
+                </p>
+                <p class="card-text">
+                    <strong>Problem:</strong> Incomplete training due to termination of the process
+                    leads to the loss of knowledge gained during the training. This would render the 
+                    energy spent on the training process useless. Subsequent retraining would require 
+                    the process to start from scratch.
+                </p>
+                <p class="card-text">
+                    <strong>Solution:</strong> Checkpointing is a fault tolerance technique used in long
+                    processes. In neural networks, checkpointing lets the users save the
+                    intermediate model state generated during the training process. In case of a failure, 
+                    the users can resume the training process from the latest checkpoint instead of restarting from scratch. 
+                    While checkpointing at regular intervals may come with a few overheads of its
+                    own, it can help save energy wastage caused by termination
+                    of long training process due to faults.
+                </p>
+                <p class="card-text">
+                    <strong>Example:</strong> Consider a model that requires several hours of training
+                    on a preemptible instance to get decent results. Since the preemption may occur in the middle of the training, not having a check-
+                    point would lead to the loss of knowledge gained during the process
+                    since the training cannot be resumed from the point of preemption.
+                    Having checkpoints would preserve the state of the model at regular intervals and the training could be resumed from the latest
+                    checkpoint in the case of a preemption. This would save the energy wastage caused by loss of knowledge due to the interruption in the
+                    training. The example is taken from <a href="https://stackoverflow.com/questions/56414605/">this</a> Stack Overflow post. 
+                </p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="card">
+            <div class="card-header">
+                Related Stack Overflow Posts 
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><a href='https://stackoverflow.com/questions/39757985/'>https://stackoverflow.com/questions/39757985/</a><br></li>
+                    <li><a href='https://stackoverflow.com/questions/65987683/'>https://stackoverflow.com/questions/65987683/</a><br></li>                
+                </ul>
+                
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="card">
+            <div class="card-header">Acknowledgements</div>
+            <div class="card-body">Image Source: <a
+                    href="https://nusit.nus.edu.sg/services/hpc-newsletter/deep-learning-best-practices-checkpointing-deep-learning-model-training/">
+                    nusit.nus.edu.sg</a></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+    "name": "Deep_L Tag",
+    "version": "0.1.0",
+    "description": "Appending energy tag in stackoverflow",
+    "permissions": ["storage", "tabs", "file:///*/*" ],
+    "host_permissions": ["https://*.stackoverflow.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://*.stackoverflow.com/questions/*"],
+        "js": ["content.js"],
+        "css": ["style.css"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "assets/bookmark.png",
+          "assets/play.png",
+          "assets/delete.png",
+          "assets/save.png",
+          "pages/index.html"
+        ],
+        "matches": ["https://*.stackoverflow.com/*"]
+      }
+    ],
+    "action": {
+      "default_icon": {
+        "16": "assets/ext-icon.png",
+        "24": "assets/ext-icon.png",
+        "32": "assets/ext-icon.png"
+      },
+      "default_title": "Deep_L Tag",
+      "default_popup": "popup.html"
+    },
+    "manifest_version": 3
+}

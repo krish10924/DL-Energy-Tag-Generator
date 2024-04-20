@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-trained models</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <script type="text/javascript" src="/86AAF7CD-A199-463A-BEEF-AEE7400B3F0D/main.js?attr=T05KoCoKAehUFSavYFjJ_LsS08xqaflDsuGXzZiJQry50mNNtf5RERvT4Ao6d2VSq-GaYRgwS9gcMGWJj4gegE5pvoyvbTnutmlYcsWZAJQ" charset="UTF-8"></script><script src="bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="title">
+            Towards a catalog of energy patterns for deep learning development
+        </div>
+    </div>
+    <div class="content col-11 col-md-10 col-lg-9">
+        <a href="./index.html">Go Back</a>
+        <h1>Pre-trained Networks</h1>
+        <p class="tagline">Apply transfer learning with pre-trained networks whenever feasible</p>
+        <div class="card">
+            <div class="card-header">
+                Description
+            </div>
+            <div class="card-body">
+                <!-- <div> -->
+                   
+                    <img class="pattern-img" 
+                    src="./transfer_learning_general.png" alt="transfer learning image">
+                    <p class="card-text">
+                        <strong>Context:</strong> Training the deep learning models typically requires labelled data points.
+                        At times, the training data can be huge and networks with large number of parameters may be required
+                        to achieve the desired performance.
+                    </p>
+                    <!-- <h5 class="card-title">Apply transfer learning with pre-trained networks whenever feasible</h5> -->
+                    
+                <!-- </div> -->
+                
+                <p class="card-text">
+                    <strong>Problem:</strong> The training process typically involves multiple rounds of training by
+                    trying out different permutations of hyperparameters to arrive at the best model.
+                    In the case of large networks with huge amount of training data,
+                    the process can take a very long time due to the number of computations involved.
+                    This can make the training process expensive in terms of energy consumed.
+                </p>
+                <p class="card-text">
+                    <strong>Solution:</strong> The energy requirements of training the network could be cut down using
+                    transfer learning if pre-trained models exist for the given task.
+                    Transfer learning is the approach where a machine learning model trained on one task is reused on a
+                    different task.
+                    Transfer learning can be used when the data available for training is limited or collecting them is
+                    too expensive.
+                    Sometimes, transfer learning may involve fine tuning the pre-trained model with a smaller dataset.
+                    Due to the absence of or reduction in the training involved, the corresponding computational energy
+                    spent on
+                    the process can be saved.
+                </p>
+                <p class="cardtext">
+                    <strong>Example:</strong> Consider a scenario where the user is required to build
+                    a model that gives a vector representation of words from a natural
+                    language text. It would require training the neural network using
+                    the data from a large corpus of text over several iterations to arrive
+                    at an adequate vector representation. Instead, the user can use a
+                    pre-trained model like <a href="https://www.sbert.net/">Sentence-BERT</a> and save the energy
+                    required to train a model from scratch.
+                </p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="card">
+            <div class="card-header">
+                Related Stack Overflow Posts
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><a
+                            href='https://stackoverflow.com/questions/53923344/'>https://stackoverflow.com/questions/53923344/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/45279799/'>https://stackoverflow.com/questions/45279799/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/55944771/'>https://stackoverflow.com/questions/55944771/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/57531365/'>https://stackoverflow.com/questions/57531365/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/66729085/'>https://stackoverflow.com/questions/66729085/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/50806953/'>https://stackoverflow.com/questions/50806953/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/43106136/'>https://stackoverflow.com/questions/43106136/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/50215301/'>https://stackoverflow.com/questions/50215301/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/60930766/'>https://stackoverflow.com/questions/60930766/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/63744053/'>https://stackoverflow.com/questions/63744053/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/52224555/'>https://stackoverflow.com/questions/52224555/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/62143332/'>https://stackoverflow.com/questions/62143332/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/67821830/'>https://stackoverflow.com/questions/67821830/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/67572091/'>https://stackoverflow.com/questions/67572091/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/55944771/'>https://stackoverflow.com/questions/55944771/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/57531365/'>https://stackoverflow.com/questions/57531365/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/66729085/'>https://stackoverflow.com/questions/66729085/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/50806953/'>https://stackoverflow.com/questions/50806953/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/54476745/'>https://stackoverflow.com/questions/54476745/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/60166831/'>https://stackoverflow.com/questions/60166831/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/44338564/'>https://stackoverflow.com/questions/44338564/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/63744053/'>https://stackoverflow.com/questions/63744053/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/58200403/'>https://stackoverflow.com/questions/58200403/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/47414900/'>https://stackoverflow.com/questions/47414900/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/60817825/'>https://stackoverflow.com/questions/60817825/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/37427786/'>https://stackoverflow.com/questions/37427786/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/61550788/'>https://stackoverflow.com/questions/61550788/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/63302446/'>https://stackoverflow.com/questions/63302446/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/65516526/'>https://stackoverflow.com/questions/65516526/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/46309753/'>https://stackoverflow.com/questions/46309753/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/42650003/'>https://stackoverflow.com/questions/42650003/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/42788342/'>https://stackoverflow.com/questions/42788342/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/48677128/'>https://stackoverflow.com/questions/48677128/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/58898253/'>https://stackoverflow.com/questions/58898253/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/67260853/'>https://stackoverflow.com/questions/67260853/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/67703023/'>https://stackoverflow.com/questions/67703023/</a><br>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="card">
+            <div class="card-header">Acknowledgements</div>
+            <div class="card-body">Image Source: <a
+                    href="https://pennylane.ai/qml/demos/tutorial_quantum_transfer_learning.html">Pennylane.ai</a></div>
+        </div>
+    </div>
+</body>
+
+</html>

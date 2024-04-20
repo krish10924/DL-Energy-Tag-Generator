@@ -1,0 +1,53 @@
+.wrapper {
+    margin: 10px auto;
+}
+
+.header {
+    /* height: 200px; */
+    background-color: #34cfeb;
+    padding-bottom: 20px;
+}
+
+.title {
+    text-align: center;
+    padding-top: 24px;
+    font-size: xx-large;
+    color: #023c6b;
+}
+
+.pattern-container {
+    cursor: pointer;
+}
+
+.pattern-link {
+    text-decoration-line: none;
+    color: inherit;
+}
+.pattern-container:hover{
+    color: #023c6b;
+}
+
+.tagline {
+    font-size: 22px;
+}
+
+.content {
+    padding: 50px 0px;
+    margin: auto;
+}
+
+.divider {
+    height: 20px;
+}
+
+.catalog-desc {
+    margin: 24px 24px;
+    font-weight: bold
+}
+
+.pattern-img {
+    max-height: 300px;
+    max-width: 300px;
+    float: right;
+    margin: 2px;
+}

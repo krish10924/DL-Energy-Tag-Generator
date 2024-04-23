@@ -7,10 +7,10 @@ In today's world, Deep Leaning Algorithms are exponentially growing ,which leads
 ### Get Started
 Before starting the below requirements, install python>=3.8.0 and pip from https://www.python.org/downloads/
 
-1. Clone the repository https://github.com/ by using the following bash command:
+1. Clone the repository https://github.com/krish10924/DL-Energy-Tag-Generator by using the following bash command:
    
    ```console
-   git clone https://github.com/
+   git clone https://github.com/krish10924/DL-Energy-Tag-Generator
    ```
 
 2. Install all the required packages by pip install command, as given in requirements.txt file. Alternatively, use the following command to install all the packages in the python environment:
